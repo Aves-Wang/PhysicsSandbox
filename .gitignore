@@ -1,7 +1,12 @@
-.obsidian/
-.DS_Store
-
 Library/
-Logs/
 Temp/
+obj/
+Logs/
 UserSettings/
+.vscode/
+*.csproj
+*.sln
+*.suo
+*.userprefs
+*.pidb
+*.log

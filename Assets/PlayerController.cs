@@ -12,14 +12,14 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         if (rb == null)
         {
-            Debug.LogError("PlayerController 所在物体没有 Rigidbody！");
+            Debug.LogError("The object with PlayerController does not have a Rigidbody!");
         }
     }
 
     void Update()
     {
-        float h = Input.GetAxis("Horizontal"); // A/D 或 左/右箭头
-        float v = Input.GetAxis("Vertical");   // W/S 或 上/下箭头
+        float h = Input.GetAxis("Horizontal"); 
+        float v = Input.GetAxis("Vertical");   
 
         
         rb.linearVelocity = new Vector3(h * moveSpeed, rb.linearVelocity.y, v * moveSpeed);

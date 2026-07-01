@@ -18,8 +18,11 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        float h = Input.GetAxis("Horizontal"); // A/D or Left/Right arrow
-        float v = Input.GetAxis("Vertical");   // W/S or Up/Down arrow
+
+
+        float h = Input.GetAxis("Horizontal"); 
+        float v = Input.GetAxis("Vertical");   
+ 
 
         rb.linearVelocity = new Vector3(h * moveSpeed, rb.linearVelocity.y, v * moveSpeed);
 
